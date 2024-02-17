@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinancialBuddy</title>
+    <link rel="stylesheet" href="layout.css">
 </head>
 <body>
-    
+    <nav id="navi">
+        <ul>
+            <li>Home</li>
+        </ul>
+    </nav>
+    <h2 id="frontPage">Welcome To Your FinancialBuddy</h2>
+    <form action="action_page.php" style="border:1px solid #ccc">
+    <div class="signupbox">
+    <input type="text" placeholder="User Name" name="user" required>
+    <br>
+    <input type="email" placeholder="Email" name="email" required>
+    <br>
+    <input type="phoneNumber" placeholder="Phone Number" name="phonenumber" optional>
+    <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>
+    <input type="password" placeholder="Verify Password" name="psw-repeat" required>
+    <br>
+</div>
+<div>
+    <button type="button" id="signup">Sign Up</button>
+</div>
+    </form> 
 </body>
 </html>
+
