@@ -24,12 +24,12 @@ html {
 }
 
 .box {
-    border-radius: 25px;
+    border-radius: 18px;
     background: #ffffff;
     padding: 20px;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    margin: 10px;
+    margin: 10px auto;
 }
 
 .table {
