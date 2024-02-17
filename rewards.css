@@ -22,3 +22,17 @@ html {
     padding-bottom: 50px;
 
 }
+
+.box {
+    border-radius: 18px;
+    background: #ffffff;
+    padding: 20px;
+    width: 80%;
+    height: 100%;
+    margin: 10px auto;
+}
+
+.table {
+    width: 80%;
+    height: 40%;
+}
