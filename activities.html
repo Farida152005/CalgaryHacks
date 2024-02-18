@@ -67,6 +67,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
     
 }
 .button:hover{
@@ -102,9 +103,43 @@
   top: 520px;
   left: 1050px;
 }
+.popup {
+  width: 400px;
+  background-color: #6bdfb5;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: rgb(225, 249, 241);
+  visibility: hidden;
+}
+
+.open-popup{
+  visibility: visible;
+}
+.popup button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #feffff;
+  color: rgb(91, 119, 110);
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.five{
+  font-size: 30px;
+}
 
 
   </style>
+
+  
 </head>
 <body>
   <nav id="navi">
@@ -128,7 +163,7 @@
   </table>
 
   <table>
-    <div id="points">Points Earned</div>
+    <div id="points">Points Earned:</div>
   </table>
 
   <table class="rec">
@@ -138,7 +173,13 @@
           <h4 style="color: rgb(91, 119, 110);">Recommend a Friend</h4>
         </div>
         
-        <button class="button" id="btn1">Complete</button>
+        <div class="container">
+        <button class="button" id="btn1" onclick="openPopup()">Complete</button>
+        <div class="popup" id="popup1">
+          <p class="five">5 Points</p>
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>
+       </div>
         
         <img class="img1" src="images/rec.webp" alt="friend" width="150px">
       
@@ -147,7 +188,14 @@
         <div>
           <h4 style="color: rgb(91, 119, 110);">Create Your Budget Plan</h4>
           <img class="img2" src="images/budget.png" alt="budget image" width="100px">
-          <button class="button" id="btn2">Complete</button>
+
+          <div class="container">
+            <button class="button" id="btn2" onclick="openPopup()">Complete</button>
+            <div class="popup" id="popup2">
+              <p class="five">5 Points</p>
+              <button type="button" onclick="closePopup()">OK</button>
+            </div>
+
         </div>
       </td>
     </tr>
@@ -160,7 +208,14 @@
       <td class="workshop" id="ws">
         <div>
           <h4 style="color: rgb(91, 119, 110)">Attend Workshops</h4>
-          <button class="button" id="btn3">Complete</button>
+
+          <div class="container">
+            <button class="button" id="btn3" onclick="openPopup()">Complete</button>
+            <div class="popup" id="popup3">
+              <p class="five">5 Points</p>
+              <button type="button" onclick="closePopup()">OK</button>
+            </div>
+
           <img class="img3" src="images/workshop.png" alt="">
         </div>
       </td>
@@ -168,12 +223,72 @@
       <td class="booking" id="book">
         <div>
           <h4 style="color:rgb(91, 119, 110)">Book With An Advisor</h4>
-          <button class="button" id="btn4">Complete</button>
+
+          <div class="container">
+            <button class="button" id="btn4" onclick="openPopup()">Complete</button>
+            <div class="popup" id="popup4">
+              <p class="five">5 Points</p>
+              <button type="button" onclick="closePopup()">OK</button>
+            </div>
+
           <img class="img4" src="images/advising.png" alt="">
         </div>
       </td>
     </tr>
 
   </table>
+  <script>
+    let popup1 = document.getElementById("popup1");
+    let popup2 = document.getElementById("popup2");
+    let popup3 = document.getElementById("popup3");
+    let popup4 = document.getElementById("popup4");
+    function openPopup(){
+      popup1.classList.add("open-popup");
+    }
+    function closePopup(){
+      popup1.classList.remove("open-popup");
+    }
+    function openPopup(){
+      popup2.classList.add("open-popup");
+    }
+    function closePopup(){
+      popup2.classList.remove("open-popup");
+    }
+    function openPopup(){
+      popup3.classList.add("open-popup");
+    }
+    function closePopup(){
+      popup3.classList.remove("open-popup");
+    }
+    function openPopup(){
+      popup4.classList.add("open-popup");
+    }
+    function closePopup(){
+      popup4.classList.remove("open-popup");
+    }
+  </script>
+  <script>
+    // Get the points display element
+    const pointsDisplay = document.getElementById('points');
+    
+    // Initialize points
+    let points = 0;
+
+    // Function to update points display
+    function updatePoints() {
+      pointsDisplay.textContent = `Points Earned: ${points}`;
+    }
+
+    // Add event listeners to all buttons
+    ['btn1', 'btn2', 'btn3', 'btn4'].forEach(btnID=> {
+      const btn = document.getElementById(btnID);
+      btn.addEventListener('click', function() {
+        // Increase points by 5
+        points += 5;
+        // Update points display
+        updatePoints();
+      });
+    });
+  </script>
 </body>
 </html>
