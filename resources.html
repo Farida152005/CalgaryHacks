@@ -14,6 +14,7 @@
                 font-weight: bold;
                 line-height: 40px;
                 padding-bottom: 0;
+                margin-bottom: 0px;
             }
             #blurb {
                 font-family: 'Inter', sans-serif;
@@ -22,6 +23,7 @@
                 font-size: 14px;
                 font-weight: 300;
                 line-height: -800px;
+                margin-top: 10px;
                 margin-right: 295px;
                 margin-left: 295px;
             }
@@ -64,14 +66,55 @@
             #links:active {
                 color: rgb(0, 0, 0);
             }
+
+            /* HEADER STYLING STARTS */
+            header img {
+                height: 80px;
+                margin-left: 20px;
+            }
+            header {
+                background-color: #4a6357;
+                position: none;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                border-radius: 35px;
+            }
+            header * {
+                display: inline;
+            }
+            header #headerLi #headerA {
+                font-family: 'Inter', sans-serif;
+                color: rgb(255, 255, 255);
+            }
+            #headerUL {
+                list-style-type: none;
+                display: flex;
+            }
+            #headerLi {
+                border-right: 1px solid lightgray;
+                padding: 20px;
+            }
+            #headerLi:last-of-type {
+                border-right: none;
+            }
+            /* HEADER STYLING ENDS */
+
         </style>
     </head>
     <body>
-        <nav id="navi">
-            <a href="index.html">Home</a>
-            <a href="dashboard.html">Return to Dashboard</a>
-            <a href="activities.html">Activities</a>
-        </nav>
+        <header>
+            <img src="images/Froggy Logo.png">
+             <nav>
+                 <ul id="headerUL">
+                     <li id="headerLi"><a id="headerA" href="index.html">Return to Sign Up Page</a></li>
+                     <li id="headerLi"><a id="headerA" href="dashboard.html">Return to Dashboard</a></li>
+                 </ul>
+             </nav>
+         </header>
 
         <h2 id="resourcesTitle">Additional Financial Literacy Resources</h2> 
         <h6 id="blurb">Access links to external resources such as scholarships, awards, financial literacy courses, and financial worksheets or templates here! This page will be updated periodically, so make sure to keep checking every once in a while. Last updated: 02/17/2024</h6>
