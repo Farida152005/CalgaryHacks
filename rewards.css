@@ -33,7 +33,35 @@ html {
     margin: 10px auto;
 }
 
-.table {
-    width: 80%;
-    height: 40%;
+
+#coupon-list {
+    max-height: 300px; /* Adjust this value as needed */
+    overflow-y: auto;
+}
+
+/* .container {
+    width: 50%;
+    align-content: center;
+} */
+
+
+/* Styling the scrollable elements */
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Add a background color to the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4c6955; /* Add a background color to the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #426334; /* Add a background color to the handle when hovered */
 }
