@@ -6,6 +6,15 @@
         <title>Dashboard</title>
         <link rel="stylesheet" href="layout.css">
         <style>
+            #dashTitle {
+                font-family: 'Inter', sans-serif;
+                color: #4a6357;
+                text-align: center;
+                font-size: 55px;
+                font-weight: bold;
+                line-height: 40px;
+                padding-bottom: 0;
+            }
             .button {
                 font-family: 'Inter', sans-serif;
                 background-color: #6845f462; /* Green */
@@ -58,6 +67,10 @@
                 background-position-y: 30px;
                 background-position-x: center;
             }
+
+            #dashTable {
+                vertical-align: top;
+            }
         </style>
     </head>
     <body>
@@ -67,9 +80,9 @@
         </nav>
 
 
-        <h2 id="frontPage">FinancialBuddy Dashboard</h2> 
+        <h2 id="dashTitle">FinancialBuddy Dashboard</h2> 
 
-        <table align="center">
+        <table align="center" id="dashTable">
             <tr>
                 <td>
                     <a href="activities.html" class="button" id="viewPointsButton">
@@ -95,6 +108,14 @@
                 </td>
             </tr>
         </table>
+    
+        <div class ="info-box" id="infobox">
+            <p id="information">Loading...</p>
+        </div>
+            </form> 
+            <script src="infobox.js"></script>
+        </body>
+        </html>
         
     </body>
 </html>    
