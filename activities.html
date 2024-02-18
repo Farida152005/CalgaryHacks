@@ -11,16 +11,28 @@
       background: #fbfcff;
       padding: 20px;
       width: calc(50% - 30px); /* Adjusted width */
-      height: 150px;
+      height: 180px;
       margin: 10px;
     }
-    #header {
+    /*#headerid {
       border-radius: 25px;
-      background: #fbfcff;
+      background:none;
       padding: 20px;
       text-align: center; 
       margin: 10px;
-      width: calc(100% - 30px); /* Adjusted width */
+      width: 100%/*calc(100% - 30px); }/* Adjusted width */ 
+    #points{
+      border-radius: 25px;
+      background-color: #fbfcff; 
+      border: none;
+      color: rgb(91, 119, 110);
+      padding: 20px 15px;
+      width: 300px;
+      text-align: left;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      justify-content: center;
     }
     .header-container {
       width: 100%; 
@@ -40,6 +52,21 @@
       display: flex;
       justify-content: center;
     }
+    .button {
+    border-radius: 25px;
+    background-color: #6bdfb5; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+.headertext{
+  text-align: left;
+}
   </style>
 </head>
 <body>
@@ -49,43 +76,55 @@
     <a href="activities.html">Activities</a>
   </nav>
 
-  <div class="nav"></div>
+ 
 
   <table class="header full-width">
     <tr>
-      <td colspan="2">
+      <td colspan="2" id="headerid">
         <div>
           <div class="header-container" id="header">
-            <h2>Gain Your Points Now!</h2>
+            <h2 class="headertext" id="frontPage">Gain Your Points Now!</h2>
           </div>
         </div>
       </td>
     </tr>
   </table>
+
+  <table>
+    <div id="points">Points Earned</div>
+  </table>
+
   <table class="rec">
     <tr>
       <td id="recfriend">
         <div>
-          <header><h4>Recommend a Friend</h4></header>
+          <h4 style="color: rgb(91, 119, 110);">Recommend a Friend</h4>
         </div>
+        <button class="button" id="btn1">Complete</button>
       </td>
       <td class="budget" id="budget2">
         <div>
-          <h4>Create Your Budget Plan</h4>
+          <h4 style="color: rgb(91, 119, 110);">Create Your Budget Plan</h4>
+          <button class="button" id="btn2">Complete</button>
         </div>
       </td>
     </tr>
   </table>
+
+
   <table>
     <tr>
       <td class="workshop" id="ws">
         <div>
-          <h4>Attend Workshops</h4>
+          <h4 style="color: rgb(91, 119, 110)">Attend Workshops</h4>
+          <button class="button" id="btn3">Complete</button>
         </div>
       </td>
+
       <td class="booking" id="book">
         <div>
-          <h4>Book With An Advisor</h4>
+          <h4 style="color:rgb(91, 119, 110)">Book With An Advisor</h4>
+          <button class="button" id="btn4">Complete</button>
         </div>
       </td>
     </tr>
