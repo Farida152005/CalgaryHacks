@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="financialadvisor.css">
 </head>
 <body>
     <nav id="navi">
@@ -12,39 +14,79 @@
         <a href="activities.html">Activities</a>
     </nav>
     <h2 id="frontPage">Book A Financial Advising Appointment Today! </h2>
-    <label for="Name"> Name: </label>
+    <label for="Name" id="N"> Name: </label>
     <input type="text" id="Name" name="Name"placeholder="Eg.Jane Doe">
     <br>
     <br>
-    <label for="Email"> Email: </label>
+    <label for="Email" id="E"> Email: </label>
     <input type="text" id="Email" name="Email"placeholder="Eg.janedoe@gmail.com">
     <br>
     <br>
-    <label for="Subject"> Subject: </label>
-    <input type="text" id="Subject" name="Subject"placeholder="Eg.Budgeting">
+    <label for="Subject" id="S"> Subject: </label>
+    <input type="text" id="Subject" name="Subject"placeholder="Eg.Budgeting" >
     <br>
     <br>
 
-    <label for="Inquiry"> Inquiry: </label>
+    <label for="Inquiry" id="I"> Inquiry: </label>
     <input type="text" id="Inquiry" name="Inquiry"placeholder="Eg.How do I write up a budget?">
     <br>
     <br>
-    <button type="button">Submit</button>
 
+    <button style="background-color: #609d62; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 100px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 0 0 600px; /* Adjust margin for moving down and right */
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;">
+Submit
+</button>
+    <style>
+        /* CSS for styling the text input field */
+        #Name {
+          width: 900px; 
+          text-align: left; 
+          margin-left: 100px; 
+        }
 
+        #Email {
+          width: 900px; 
+          text-align: left; 
+          margin-left: 100px; 
+        }
+        
+        #Subject {
+          width: 900px; 
+          text-align: left; 
+          margin-left: 100px; 
+        }
 
+        #Inquiry {
+          width: 900px; 
+          text-align: left; 
+          margin-left: 100px; 
+        }
 
+        #I {
+    font-size: 30px; 
+        }
 
+        #E {
+    font-size: 30px; 
+        }
+        #S {
+    font-size: 30px; 
+        }
+        #N {
+    font-size: 30px; 
+        }
+    </style>
+        
 
-
-
-
-
-
-
-
-
-
-
-
-
+     
