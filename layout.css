@@ -1,11 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 *{box-sizing: border-box}
-html {
+body {
     background: linear-gradient(to bottom, rgba(151,203,241, 0.63), rgba(155,220,91, 0.63),rgba(255, 255, 255, 0.63));
-    background-size: cover;
-    height: 100%;
+    background-size: 100%;
     margin: 0;
+    padding: 0;
+    background-attachment: fixed;
 }
 .error{
     border: 1px solid red;
@@ -20,7 +21,6 @@ html {
     text-align: center;
     font-size: 55px;
     font-weight: bold;
-    padding-bottom: 50px;
     
 }
 input[type=text], input[type=password], input[type=email], input[type=phoneNumber]{
@@ -37,6 +37,10 @@ input[type=text], input[type=password], input[type=email], input[type=phoneNumbe
     text-align: center;
     background-color: #4a6357;
     border-radius: 30px;
+}
+#frog{
+    height: 200px;
+    padding-left: 40.5%;
 }
 #signup{
     height:68px;
