@@ -28,7 +28,7 @@ html {
     border-radius: 18px;
     background: #ffffff;
     padding: 20px;
-    width: 80%;
+    width: 70%;
     height: 100%;
     margin: 10px auto;
 }
@@ -39,10 +39,26 @@ html {
     overflow-y: auto;
 }
 
-/* .container {
-    width: 50%;
-    align-content: center;
-} */
+.logo {
+    max-width: 50px; /* Adjust as needed */
+    height: auto;
+}
+
+td:nth-child(1) {
+    width: 60%;
+}
+
+td:nth-child(2) {
+    width: 40%;
+    text-align: right;
+}
+
+.logo {
+    max-width: 50px; /* Adjust as needed */
+    height: auto;
+}
+
+
 
 
 /* Styling the scrollable elements */
