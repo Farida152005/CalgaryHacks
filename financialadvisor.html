@@ -9,12 +9,11 @@
 <body>
     <nav id="navi">
         <a href="index.html">Home</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="activities.html">Activities</a>
+        <a href="dashboard.html">Return to Dashboard</a>
     </nav>
     <h2 id="frontPage">Book A Financial Advising Appointment Today! </h2>
 
-    <table id="formTable">
+    <table id="formTable" align="center">
         <tr>
             <td>
                 <label for="Name" id="N"> Name: </label>
@@ -38,25 +37,40 @@
     </table>
 
     <button style="background-color: #609d62; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 100px;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 10px 0 0 600px; /* Adjust margin for moving down and right */
-    cursor: pointer;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;">
-Submit
-</button>
+        border: none;
+        color: white;
+        padding: 15px 100px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px 0 0 700px; /* Adjust margin for moving down and right */
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;" onclick="toggleText()">
+        Submit Inquiry
+    </button>
+
+    <script>
+        function toggleText() {
+        var text = document.getElementById("demo");
+        if (text.style.display === "none") {
+            text.style.display = "block";
+        } else {
+            text.style.display = "none";
+        }
+    }
+    </script>
+
+    <p style="display: none; font-family: 'Inter', sans-serif; margin-left: 700px;" 
+    id="demo">Your inquiry has been successfully submitted!
+    </p>
 
     <style>
         /* CSS for styling the text input field */
         #Name, #Email, #Subject, #Inquiry {
-            width: 900px; 
+            width: 800px; 
             text-align: left; 
             margin-left: 30px; 
         }
