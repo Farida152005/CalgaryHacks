@@ -72,41 +72,55 @@
                 vertical-align: top;
             }
 
-            #navi {
+            /* HEADER STYLING STARTS */
+            header img {
+                height: 80px;
+                margin-left: 20px;
+            }
+            header {
                 background-color: #4a6357;
-                overflow: hidden;
+                position: none;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                box-shadow: 0 0 15px 0 black;
                 border-radius: 35px;
-                height: 40px;
             }
-
-            /* Style the links inside the navigation bar */
-            #navi a {
-                float: center;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
+            header * {
+                display: inline;
             }
-
-            /* Change the color of links on hover */
-            #navi a:hover {
-                background-color: #ddd;
-                color: black;
+            header #headerLi #headerA {
+                font-family: 'Inter', sans-serif;
+                color: rgb(255, 255, 255);
             }
-
-            /* Add a color to the active/current link */
-            #navi a.active {
-                background-color: #04AA6D;
-                color: white;
+            #headerUL {
+                list-style-type: none;
+                display: flex;
             }
+            #headerLi {
+                border-right: 1px solid lightgray;
+                padding: 20px;
+            }
+            #headerLi:last-of-type {
+                border-right: none;
+            }
+            /* HEADER STYLING ENDS */
 
         </style>
     </head>
     <body>
-        <nav id="navi">
-            <a href="index.html">Return to Sign Up Page</a>
-        </nav>
+        <header>
+            <img src="Froggy Logo.png">
+             <nav>
+                 <ul id="headerUL">
+                     <li id="headerLi"><a id="headerA" href="#">Home</a></li>
+                     <li id="headerLi"><a id="headerA" href="index.html">Return to Sign Up Page</a></li>
+                 </ul>
+             </nav>
+         </header>
 
 
         <h2 id="dashTitle">FinancialBuddy Dashboard</h2> 
