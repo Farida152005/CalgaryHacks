@@ -5,32 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinancialBuddy</title>
     <link rel="stylesheet" href="layout.css">
+    
 </head>
 <body>
     <h2 id="frontPage">Welcome To Your FinancialBuddy</h2>
-    <form action="action_page.php" style="border:1px solid #ccc">
+    <form action="dashboard.html" method="post" style="border:1px solid #ccc">
     <div class="signupbox">
-    <input type="text" placeholder="User Name" name="user" required>
+    <input type="text" placeholder="User Name: Required" name="user" required>
     <br>
-    <input type="email" placeholder="Email" name="email" required>
+    <input type="email" placeholder="Email: Required" name="email" required>
     <br>
-    <input type="phoneNumber" placeholder="Phone Number" name="phonenumber" optional>
+    <input type="phoneNumber" placeholder="Phone Number: Optional" name="phonenumber" optional>
     <br>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password: Required" name="psw" required>
     <br>
-    <input type="password" placeholder="Verify Password" name="psw-repeat" required>
+    <input type="password" placeholder="Verify Password: Reqiured" name="psw-repeat" required>
     <br>
 </div>
 <div class="button">
-    <button onclick="window.location.href='dashboard.html'" type="button" id="signup">Sign Up</button>
+    <button type="submit" id="signup">Sign Up</button>
 </div>
 <br>
 <br>
-
+<div class="message" id="error-message"></div>
 <div class ="info-box" id="infobox">
     <p id="information">Loading...</p>
 </div>
     </form> 
     <script src="infobox.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>

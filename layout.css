@@ -7,6 +7,9 @@ html {
     height: 100%;
     margin: 0;
 }
+.error{
+    border: 1px solid red;
+}
 .signupbox{
     font-family: 'Inter', sans-serif; 
     padding-left: 470px;
