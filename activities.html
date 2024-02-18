@@ -136,17 +136,63 @@
   font-size: 30px;
 }
 
+        /* HEADER STYLING STARTS */
+            header img {
+                height: 80px;
+                margin-left: 20px;
+            }
+            header {
+                background-color: #4a6357;
+                position: none;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                border-radius: 35px;
+            }
+            header * {
+                display: inline;
+            }
+            header #headerLi #headerA {
+                font-family: 'Inter', sans-serif;
+                color: rgb(255, 255, 255);
+            }
+            #headerUL {
+                list-style-type: none;
+                display: flex;
+            }
+            #headerLi {
+                border-right: 1px solid lightgray;
+                padding: 20px;
+            }
+            #headerLi:last-of-type {
+                border-right: none;
+            }
+            #headerLi:first-of-type {
+                border-right: none;
+                margin-left: 80px;
+                border-right: 1px solid lightgray;
+            }
+            
+            /* HEADER STYLING ENDS */
+
 
   </style>
 
   
 </head>
 <body>
-  <nav id="navi">
-    <a href="index.html">Home</a>
-    <a href="dashboard.html">Dashboard</a>
-    <a href="activities.html">Activities</a>
-  </nav>
+  <header>
+    <img src="images/Froggy Logo.png">
+     <nav>
+         <ul id="headerUL">
+             <li id="headerLi"><a id="headerA" href="index.html">Return to Sign Up Page</a></li>
+             <li id="headerLi"><a id="headerA" href="dashboard.html">Return to Dashboard</a></li>
+         </ul>
+     </nav>
+ </header>
 
  
 
