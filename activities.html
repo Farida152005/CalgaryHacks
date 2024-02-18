@@ -222,7 +222,7 @@
         <div class="container">
         <button class="button" id="btn1" onclick="openPopup()">Complete</button>
         <div class="popup" id="popup1">
-          <p class="five">5 Points</p>
+          <p class="five">50 Points</p>
           <button type="button" onclick="closePopup()">OK</button>
         </div>
        </div>
@@ -238,7 +238,7 @@
           <div class="container">
             <button class="button" id="btn2" onclick="openPopup()">Complete</button>
             <div class="popup" id="popup2">
-              <p class="five">5 Points</p>
+              <p class="five">50 Points</p>
               <button type="button" onclick="closePopup()">OK</button>
             </div>
 
@@ -258,7 +258,7 @@
           <div class="container">
             <button class="button" id="btn3" onclick="openPopup()">Complete</button>
             <div class="popup" id="popup3">
-              <p class="five">5 Points</p>
+              <p class="five">50 Points</p>
               <button type="button" onclick="closePopup()">OK</button>
             </div>
 
@@ -273,7 +273,7 @@
           <div class="container">
             <button class="button" id="btn4" onclick="openPopup()">Complete</button>
             <div class="popup" id="popup4">
-              <p class="five">5 Points</p>
+              <p class="five">50 Points</p>
               <button type="button" onclick="closePopup()">OK</button>
             </div>
 
@@ -329,8 +329,8 @@
     ['btn1', 'btn2', 'btn3', 'btn4'].forEach(btnID=> {
       const btn = document.getElementById(btnID);
       btn.addEventListener('click', function() {
-        // Increase points by 5
-        points += 5;
+        // Increase points by 50
+        points += 50;
         // Update points display
         updatePoints();
       });
