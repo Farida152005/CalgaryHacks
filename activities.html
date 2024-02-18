@@ -8,28 +8,29 @@
   <style>
     #recfriend, #budget2, #ws, #book {
       border-radius: 25px;
-      background: #ffffff;
+      background: #fbfcff;
       padding: 20px;
-      width: 200px;
+      width: calc(50% - 30px); /* Adjusted width */
       height: 150px;
       margin: 10px;
     }
     #header {
       border-radius: 25px;
-      background: #ffffff;
+      background: #fbfcff;
       padding: 20px;
       text-align: center; 
       margin: 10px;
+      width: calc(100% - 30px); /* Adjusted width */
     }
     .header-container {
-      width: 80%; 
+      width: 100%; 
       margin: auto;
     }
     .full-width {
       width: 100%;
     }
     .budget {
-      width: 50%;
+      width: calc(50% - 30px); /* Adjusted width */
     }
     /* Added CSS */
     table {
@@ -46,23 +47,24 @@
     <a href="index.html">Home</a>
     <a href="dashboard.html">Dashboard</a>
     <a href="activities.html">Activities</a>
-    <a href="rewards.html">Rewards</a>
   </nav>
 
   <div class="nav"></div>
 
-  <table>
+  <table class="header full-width">
     <tr>
       <td colspan="2">
-        <div class="header-container">
-          <div class="header full-width" id="header">
+        <div>
+          <div class="header-container" id="header">
             <h2>Gain Your Points Now!</h2>
           </div>
         </div>
       </td>
     </tr>
+  </table>
+  <table class="rec">
     <tr>
-      <td class="rec" id="recfriend">
+      <td id="recfriend">
         <div>
           <header><h4>Recommend a Friend</h4></header>
         </div>
@@ -73,6 +75,8 @@
         </div>
       </td>
     </tr>
+  </table>
+  <table>
     <tr>
       <td class="workshop" id="ws">
         <div>
