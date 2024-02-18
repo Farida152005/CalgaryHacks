@@ -28,7 +28,7 @@ html {
     border-radius: 18px;
     background: #ffffff;
     padding: 20px;
-    width: 80%;
+    width: 60%;
     height: 100%;
     margin: 10px auto;
 }
@@ -39,10 +39,39 @@ html {
     overflow-y: auto;
 }
 
-/* .container {
-    width: 50%;
-    align-content: center;
-} */
+.logo {
+    max-width: 50px; /* Adjust as needed */
+    height: auto;
+}
+
+td:nth-child(1) {
+    width: 60%;
+}
+
+td:nth-child(2) {
+    width: 40%;
+    text-align: right;
+}
+
+.points {
+    margin-right: 20px; 
+    background-color: #80d2aa;
+    border-radius: 20px; 
+    padding: 10px; 
+    display: inline-block;
+    color: rgb(7, 54, 19);
+    text-align: center;
+}
+
+.points:hover {
+    background-color: rgb(166, 205, 87);
+    color:aliceblue;
+}
+
+.text {
+    margin-left: 20px;
+    color: #4a6357;
+}
 
 
 /* Styling the scrollable elements */

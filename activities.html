@@ -8,28 +8,41 @@
   <style>
     #recfriend, #budget2, #ws, #book {
       border-radius: 25px;
-      background: #ffffff;
+      background: #fbfcff;
       padding: 20px;
-      width: 200px;
-      height: 150px;
+      width: calc(40% - 30px); /* Adjusted width */
+      height: 180px;
       margin: 10px;
     }
-    #header {
+    /*#headerid {
       border-radius: 25px;
-      background: #ffffff;
+      background:none;
       padding: 20px;
       text-align: center; 
       margin: 10px;
+      width: 100%/*calc(100% - 30px); }/* Adjusted width */ 
+    #points{
+      border-radius: 25px;
+      background-color: #fbfcff; 
+      border: none;
+      color: rgb(91, 119, 110);
+      padding: 20px 15px;
+      width: 300px;
+      text-align: left;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      justify-content: center;
     }
     .header-container {
-      width: 80%; 
+      width: 100%; 
       margin: auto;
     }
     .full-width {
       width: 100%;
     }
     .budget {
-      width: 50%;
+      width: calc(50% - 30px); /* Adjusted width */
     }
     /* Added CSS */
     table {
@@ -39,6 +52,58 @@
       display: flex;
       justify-content: center;
     }
+    img {
+    position: absolute;
+    /*border: solid 1px black; /*Remove this, just for visualation without img sources*/
+    }
+
+    .button {
+    border-radius: 25px;
+    background-color: #6bdfb5; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+.button:hover{
+  background-color: #245b47;
+  color:aliceblue;
+}
+.headertext{
+  text-align: left;
+}
+
+ .img2, .img3 {
+
+  width: 160px; /*Remove this or replace with auto*/
+  height: 160px;
+}
+.img1 {
+  width: 180px;
+  top: 346px;
+  left: 400px;
+}
+
+.img2 {
+  top: 320px;
+  left: 1060px;
+}
+
+.img3 {
+  top: 525px;
+  left: 390px;
+}
+.img4 {
+  width: 190px;
+  top: 520px;
+  left: 1050px;
+}
+
+
   </style>
 </head>
 <body>
@@ -46,45 +111,69 @@
     <a href="index.html">Home</a>
     <a href="dashboard.html">Dashboard</a>
     <a href="activities.html">Activities</a>
-    <a href="rewards.html">Rewards</a>
   </nav>
 
-  <div class="nav"></div>
+ 
 
-  <table>
+  <table class="header full-width">
     <tr>
-      <td colspan="2">
-        <div class="header-container">
-          <div class="header full-width" id="header">
-            <h2>Gain Your Points Now!</h2>
+      <td colspan="2" id="headerid">
+        <div>
+          <div class="header-container" id="header">
+            <h2 class="headertext" id="frontPage">Gain Your Points Now!</h2>
           </div>
         </div>
       </td>
     </tr>
+  </table>
+
+  <table>
+    <div id="points">Points Earned</div>
+  </table>
+
+  <table class="rec">
     <tr>
-      <td class="rec" id="recfriend">
+      <td id="recfriend">
         <div>
-          <header><h4>Recommend a Friend</h4></header>
+          <h4 style="color: rgb(91, 119, 110);">Recommend a Friend</h4>
         </div>
+        
+        <button class="button" id="btn1">Complete</button>
+        
+        <img class="img1" src="images/rec.webp" alt="friend" width="150px">
+      
       </td>
       <td class="budget" id="budget2">
         <div>
-          <h4>Create Your Budget Plan</h4>
+          <h4 style="color: rgb(91, 119, 110);">Create Your Budget Plan</h4>
+          <img class="img2" src="images/budget.png" alt="budget image" width="100px">
+          <button class="button" id="btn2">Complete</button>
         </div>
       </td>
     </tr>
+  </table>
+
+
+  <table>
+
     <tr>
       <td class="workshop" id="ws">
         <div>
-          <h4>Attend Workshops</h4>
+          <h4 style="color: rgb(91, 119, 110)">Attend Workshops</h4>
+          <button class="button" id="btn3">Complete</button>
+          <img class="img3" src="images/workshop.png" alt="">
         </div>
       </td>
+
       <td class="booking" id="book">
         <div>
-          <h4>Book With An Advisor</h4>
+          <h4 style="color:rgb(91, 119, 110)">Book With An Advisor</h4>
+          <button class="button" id="btn4">Complete</button>
+          <img class="img4" src="images/advising.png" alt="">
         </div>
       </td>
     </tr>
+
   </table>
 </body>
 </html>
