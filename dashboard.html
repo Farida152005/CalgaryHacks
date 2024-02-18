@@ -13,18 +13,50 @@
                 border-radius: 35px;
                 color: rgb(255, 255, 255);
                 padding: 40px;
-                width: 350px;
+                padding-top: 200px;
+                width: 400px;
                 height: 200px;
                 margin: 10px auto; 
                 margin-right: 10px;
                 margin-left: 10px;
                 text-align: center;
-                text-decoration: none;
+                text-decoration: overline;
                 display: inline-block;
-                font-size: 20px; 
+                font-size: 20px;
             }
             .button:hover {
                 background-color: rgb(14, 50, 160);
+            }
+
+            #viewPointsButton {
+                background-image: url( 'https://cdn-icons-png.flaticon.com/512/10017/10017583.png' );
+                background-size: 55%;
+                background-repeat: no-repeat;
+                background-position-x: center;
+            }
+
+            #rewardsButton {
+                background-image: url( 'https://cdn.pixabay.com/photo/2021/02/07/00/06/plus-5989740_1280.png' );
+                background-size: 35%;
+                background-position-y: 30px;
+                background-repeat: no-repeat;
+                background-position-x: center;
+            }
+
+            #resourcesButton {
+                background-image: url( 'https://static.thenounproject.com/png/5077477-200.png' );
+                background-size: 40%;
+                background-repeat: no-repeat;
+                background-position-y: 25px;
+                background-position-x: center;
+            }
+
+            #financialAdvisorButton {
+                background-image: url( 'https://static.vecteezy.com/system/resources/previews/008/506/400/original/telephone-contact-icon-in-black-circle-shape-free-png.png' );
+                background-size: 35%;
+                background-repeat: no-repeat;
+                background-position-y: 30px;
+                background-position-x: center;
             }
         </style>
     </head>
@@ -41,25 +73,25 @@
         <table align="center">
             <tr>
                 <td>
-                    <a href="viewpoints.html" class="button">
-                        View Points
+                    <a href="viewpoints.html" class="button" id="viewPointsButton">
+                        VIEW POINTS
                     </a> 
                 </td>
                 <td>
-                    <a href="rewards.html" class="button">
-                        Earn Points
+                    <a href="rewards.html" class="button" id="rewardsButton">
+                        EARN POINTS
                     </a>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="resources.html" class="button">
-                        Financial Resources
+                    <a href="resources.html" class="button" id="resourcesButton">
+                        FINANCIAL RESOURCES
                     </a> 
                 </td>
                 <td>
-                    <a href="financialadvisor.html" class="button">
-                        Contact a Financial Advisor
+                    <a href="financialadvisor.html" class="button" id="financialAdvisorButton">
+                        CONTACT A FINANCIAL ADVISOR
                     </a> 
                 </td>
             </tr>
