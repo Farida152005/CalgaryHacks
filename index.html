@@ -8,10 +8,11 @@
 </head>
 <body>
     <nav id="navi">
-        <a href="index.html">Home</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="activities.html">Activities</a>
-        <a href="rewards.html">Rewards</a>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="activities.html">Activities</a>
+        </ul>
     </nav>
     <h2 id="frontPage">Welcome To Your FinancialBuddy</h2>
     <form action="action_page.php" style="border:1px solid #ccc">
@@ -27,10 +28,15 @@
     <input type="password" placeholder="Verify Password" name="psw-repeat" required>
     <br>
 </div>
-<div>
+<div class="button">
     <button type="button" id="signup">Sign Up</button>
 </div>
+<br>
+<br>
+<div class ="info-box" id="infobox">
+    <p id="information">Loading...</p>
+</div>
     </form> 
+    <script src="infobox.js"></script>
 </body>
 </html>
-
